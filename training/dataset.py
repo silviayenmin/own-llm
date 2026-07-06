@@ -58,6 +58,39 @@ class GPTDataset(Dataset[tuple[torch.Tensor, torch.Tensor]]):
         return x, y
 
 
+class InstructDataset(Dataset[tuple[torch.Tensor, torch.Tensor]]):
+    """PyTorch Dataset loading pre-padded discrete sequences from a .pt file."""
+
+    def __init__(self, data_path: str | Path) -> None:
+        """Initialize the InstructDataset.
+
+        Args:
+            data_path: Path to the preprocessed PyTorch tensor (.pt) file of shape (N, seq_len + 1).
+        """
+        self.data_path = Path(data_path)
+
+        if not self.data_path.exists():
+            raise FileNotFoundError(f"Processed instruct dataset tensor not found at: {self.data_path}")
+
+        # Load the 2D tensor of shape (N, seq_len + 1)
+        self.data = torch.load(self.data_path, map_location="cpu")
+
+    def __len__(self) -> int:
+        return self.data.size(0)
+
+    def __getitem__(self, idx: int) -> tuple[torch.Tensor, torch.Tensor]:
+        row = self.data[idx]
+        
+        # x is the sequence without the last token
+        x = row[:-1]
+        
+        # y is the sequence shifted by 1
+        y = row[1:]
+        
+        return x, y
+
+
+
 def preprocess_data(config: GPTConfig, tokenizer: BaseTokenizer) -> None:
     """Read a raw text corpus, tokenize it, split it, and save train/val binaries.
 

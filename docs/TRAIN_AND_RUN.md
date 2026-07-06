@@ -20,15 +20,15 @@ Ensure you have Python 3.11+ installed. Execute the following commands in the pr
 
 ```bash
 # 1. Create a virtual environment
-python -m venv .venv
+python -m venv myenv
 
 # 2. Activate the virtual environment
 # On Windows (PowerShell):
-.venv\Scripts\Activate.ps1
+myenv\Scripts\Activate.ps1
 # On Windows (CMD):
-.venv\Scripts\activate.bat
+myenv\Scripts\activate.bat
 # On Linux/macOS:
-source .venv/bin/activate
+source myenv/bin/activate
 
 # 3. Upgrade pip and install core packages
 python.exe -m pip install --upgrade pip
@@ -44,21 +44,15 @@ pip install -r requirements.txt
 
 Mini GPT supports BPE (Byte-Pair Encoding) or simple character-level tokenizers. A custom tokenizer must be trained on your raw input corpus before the model can interpret text.
 
-To train the tokenizer, run it as a module using the `-m` flag to ensure internal imports resolve correctly:
+To train the tokenizer, run it as a module using the `-m` flag to ensure internal imports resolve correctly. It will automatically load the tokenizer settings (like type and vocabulary size) from your `configs/config.yaml` file:
 
 ```bash
-# Train a BPE tokenizer (Recommended)
-python -m tokenizer.train_tokenizer --type bpe --vocab_size 320 --raw_data_path data/raw/input.txt --tokenizer_dir data/tokenizer
-
-# Train a Character-level tokenizer (Simpler/Alternative)
-python -m tokenizer.train_tokenizer --type char --raw_data_path data/raw/input.txt --tokenizer_dir data/tokenizer
+# Train the tokenizer using settings from config.yaml
+python -m tokenizer.train_tokenizer --config configs/config.yaml
 ```
 
 ### CLI Parameters:
-* `--type`: The tokenizer architecture, either `bpe` or `char`.
-* `--vocab_size`: Target vocabulary size (only applies to BPE merges).
-* `--raw_data_path`: Path to the raw text corpus (defaults to `data/raw/input.txt`).
-* `--tokenizer_dir`: Destination directory to output the generated `tokenizer.json` configuration.
+* `--config`: Path to the YAML configuration file containing model, training, and data settings (e.g., `configs/config.yaml`).
 
 ---
 
@@ -102,16 +96,34 @@ The script will:
 
 ---
 
-## 5. Run the API and Web UI Playground
+## 5. Instruction Fine-Tuning (Instruct Mode)
+
+Once the base model is trained, it only knows how to generate continuous text. To make it answer questions like an assistant (ChatGPT style), we must fine-tune it on a Q&A dataset.
+
+### 1. Preprocess the Instruct Dataset
+Convert the JSON Q&A pairs (`data/instruct/qa_dataset.json`) into padded token sequences:
+```bash
+python -m training.finetune_dataset --config configs/config.yaml
+```
+
+### 2. Run the Fine-Tuning Script
+Train the pre-trained base model on the instruct data. This will save a new `instruct_model.pt`:
+```bash
+python -m training.finetune --config configs/config.yaml
+```
+
+---
+
+## 6. Run the API and Web UI Playground
 
 We have integrated a premium, glassmorphic dark-mode Web UI directly inside the FastAPI web server. 
 
 ### Launch the FastAPI Server
-Run the FastAPI application using Uvicorn:
+Run the FastAPI application using Uvicorn. To use the newly fine-tuned instruct model, set the environment variable:
 
 ```bash
-# Activate Uvicorn server in reload mode
-python -m uvicorn api.main:app --reload --host 127.0.0.1 --port 8000
+# Activate Uvicorn server in reload mode with Instruct Model
+$env:MODEL_CHECKPOINT_PATH="experiments/checkpoints/instruct_model.pt"; python -m uvicorn api.main:app --reload --host 127.0.0.1 --port 8000
 ```
 
 > [!NOTE]
@@ -124,14 +136,15 @@ Once the server is running, open your web browser and navigate to:
 
 #### Web UI Key Features:
 * **Interactive Parameters Slider**: Dynamically adjust generation characteristics (Temperature, Max New Tokens, Top-K Sampling).
+* **Instruct Formatting Checkbox**: Automatically wrap your prompt in `Prompt: {text}\nResponse: ` so the model knows to answer. **(Important: Check this when using instruct_model.pt!)**
 * **Live Health Dashboard**: Real-time status indicators checking API online state, calculation device backend (CPU/CUDA), and loaded status of the checkpoint/tokenizer.
-* **Instant Seed Chips**: Click quick prompt templates (like `First Citizen:`) to instantly seed generation.
+* **Instant Seed Chips**: Click quick prompt templates to instantly seed generation.
 * **Simulated Typing Stream Effect**: Tokens are generated on the server and printed out sequentially in the terminal area with smooth typewriter animations.
 * **In-App Integration Guide**: A native tab detailing key commands.
 
 ---
 
-## 6. Run the Verification Tests
+## 7. Run the Verification Tests
 
 A comprehensive unit test suite is provided to ensure all components behave identically to mathematical specs.
 
