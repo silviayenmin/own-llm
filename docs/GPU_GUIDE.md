@@ -11,7 +11,7 @@ By default, the setup installs a CPU-only version of PyTorch. To enable GPU acce
 
 ```powershell
 # 1. Activate the virtual environment
-.venv\Scripts\Activate.ps1
+myenv\Scripts\Activate.ps1
 
 # 2. Uninstall the CPU-only PyTorch version
 pip uninstall torch -y
@@ -75,7 +75,7 @@ With CUDA active and the config file updated, execute the following commands in 
 ### 1. Preprocess the Dataset
 Since the `block_size` changed from `128` to `256`, we re-align the dataset mapping:
 ```powershell
-python -m training.dataset --tokenizer_dir data/tokenizer
+python -m training.dataset --config configs/config.yaml
 ```
 
 ### 2. Train the Model on GPU

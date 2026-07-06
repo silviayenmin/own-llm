@@ -28,7 +28,7 @@ Train the model on general text.
 Output:
 
 ``` text
-base_model.pt
+best_model.pt
 tokenizer.json
 ```
 
@@ -36,36 +36,24 @@ tokenizer.json
 
 Store instruction/response pairs.
 
-Example JSON:
+Example JSON (`data/instruct/qa_dataset.json`):
 
 ``` json
-{
-  "instruction": "Explain AI",
-  "response": "Artificial Intelligence is the simulation of human intelligence by machines."
-}
+[
+  {"prompt": "Explain AI", "response": "Artificial Intelligence is the simulation of human intelligence by machines."}
+]
 ```
 
-Convert every sample into plain text:
+Format and pad each pair into an independent discrete sequence ending with `<|endoftext|>`:
 
 ``` text
-### User:
-Explain AI
-
-### Assistant:
-Artificial Intelligence is the simulation of human intelligence by machines.
+Prompt: Explain AI
+Response: Artificial Intelligence is the simulation of human intelligence by machines.<|endoftext|>
 ```
 
-## 3. Tokenization
+## 3. Tokenization and Padding
 
-Use the **same tokenizer** used during pretraining.
-
-``` text
-Conversation
-      ↓
-Tokenizer
-      ↓
-Token IDs
-```
+Use the **same tokenizer** used during pretraining, but pad each sequence individually to exactly `block_size + 1` so that absolute positional embeddings start at 0 for every prompt. Save as `instruct_train.pt`.
 
 ## 4. Load the Pretrained Model
 
@@ -78,17 +66,17 @@ model = GPT(config)
 Load the pretrained checkpoint:
 
 ``` python
-model.load_state_dict(torch.load("base_model.pt"))
+checkpoint = torch.load("best_model.pt")
+model.load_state_dict(checkpoint["model_state_dict"])
 ```
 
 ## 5. Continue Training
 
-The training loop is almost identical to pretraining.
+The training loop is almost identical to pretraining, but loads from `InstructDataset`.
 
 ``` python
-for batch in dataloader:
-    logits = model(x)
-    loss = cross_entropy(logits, y)
+for x, y in dataloader:
+    logits, loss = model(x, targets=y)
     loss.backward()
     optimizer.step()
 ```
@@ -97,15 +85,15 @@ Changes compared to pretraining:
 
   Pretraining                  Fine-Tuning
   ---------------------------- ---------------------------------
-  Wikipedia, Books, Articles   Conversations, QA, Instructions
+  Continuous text              Padded discrete QA sequences
   Large learning rate          Smaller learning rate
-  Many epochs                  Fewer epochs
+  Many epochs                  Fewer epochs (or higher if dataset is tiny)
   Random weights               Pretrained weights
 
 ## 6. Save the New Model
 
 ``` text
-chat_model.pt
+instruct_model.pt
 ```
 
 ## Project Structure
@@ -113,20 +101,19 @@ chat_model.pt
 ``` text
 project/
 │
-├── pretrain.py
-├── finetune.py
-├── trainer.py
-├── tokenizer.py
-├── model/
+├── training/
+│   ├── train.py
+│   ├── finetune.py
+│   ├── finetune_dataset.py
+│   └── dataset.py (InstructDataset)
 │
-├── datasets/
-│   ├── wikipedia.txt
-│   ├── books.txt
-│   └── conversations.json
+├── data/
+│   ├── raw/
+│   └── instruct/qa_dataset.json
 │
-├── checkpoints/
-│   ├── base_model.pt
-│   └── chat_model.pt
+├── experiments/checkpoints/
+│   ├── best_model.pt
+│   └── instruct_model.pt
 ```
 
 ## Fine-Tuning Pipeline
@@ -134,17 +121,17 @@ project/
 ``` text
 Instruction Dataset
         ↓
-Format as Chat
+Format and Pad Sequences (finetune_dataset.py)
         ↓
-Tokenize
+Save instruct_train.pt
         ↓
-Load base_model.pt
+Load best_model.pt
         ↓
-Continue Training
+Continue Training (finetune.py)
         ↓
-Save chat_model.pt
+Save instruct_model.pt
         ↓
-Generate Responses
+Generate Responses via API
 ```
 
 ## Future Roadmap
