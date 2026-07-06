@@ -1,30 +1,30 @@
-# Mini GPT Configuration - Balanced CPU Profile
+# Mini GPT Configuration - GPU Optimized Profile
 
 model:
-  vocab_size: 2000        # Vocab size matching trained BPE tokenizer
-  block_size: 128         # Balanced context window for CPU
-  n_layer: 4              # Balanced number of transformer blocks
-  n_head: 4               # Balanced number of attention heads
-  n_embd: 128             # Hidden dimension size
-  dropout: 0.1            # Dropout rate
+  vocab_size: 99          # Vocab size matching trained char tokenizer
+  block_size: 256         # Larger context window for GPU
+  n_layer: 6              # Reduced layers to prevent overfitting on small data
+  n_head: 6               # Reduced attention heads
+  n_embd: 384             # Reduced hidden dimension
+  dropout: 0.2            # Increased dropout rate to prevent memorization
   bias: false             # Whether to use bias in Linear layers
 
 training:
-  batch_size: 16          # Balanced batch size for CPU speed
-  learning_rate: 1.0e-3   # Learning rate
+  batch_size: 16          # Reduced batch size to fix CUDA OOM on 16GB GPU
+  learning_rate: 6.0e-4   # Slightly lower learning rate for larger model
   weight_decay: 0.1       # Weight decay for AdamW
   beta1: 0.9              # Adam beta1
   beta2: 0.95             # Adam beta2
   grad_clip: 1.0          # Gradient clipping threshold
-  epochs: 10               # Number of epochs to train
-  warmup_iters: 20        # Warmup iterations
-  lr_decay_iters: 300     # Decay steps
+  epochs: 5                # Reduced to 5 because 18.5MB dataset is huge and will take a long time
+  warmup_iters: 50        # Warmup iterations
+  lr_decay_iters: 3000    # Increased decay steps to match higher epochs
   min_lr: 1.0e-4          # Minimum learning rate
   eval_interval: 20       # Run evaluation every N steps
   eval_iters: 10          # Number of iterations for validation eval
   log_interval: 5         # Console log interval
   checkpoint_dir: "experiments/checkpoints"
-  device: "cpu"           # Always CPU for local runs without CUDA
+  device: "cuda"          # Use CUDA for NVIDIA GPUs
   seed: 1337              # Random seed for reproducibility
 
 data:
