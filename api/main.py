@@ -622,6 +622,14 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 <input type="range" id="top-k" min="0" max="100" step="1" value="0" oninput="document.getElementById('topk-val').innerText = this.value == 0 ? 'None' : this.value">
                 <span style="font-size: 0.75rem; color: var(--text-secondary);">Limits token pool to the K most probable options.</span>
             </div>
+            
+            <div class="control-group">
+                <label for="instruct-mode" style="justify-content: flex-start; gap: 0.5rem; cursor: pointer;">
+                    <input type="checkbox" id="instruct-mode" style="transform: scale(1.2);">
+                    <span>Instruct Formatting</span>
+                </label>
+                <span style="font-size: 0.75rem; color: var(--text-secondary);">Wraps text as 'Prompt: {text}\nResponse: '</span>
+            </div>
 
             <!-- Health check specs -->
             <div class="section-title">API Meta Details</div>
@@ -783,10 +791,15 @@ python training/train.py --config configs/config.yaml</pre>
         }
 
         async function generateText() {
-            const prompt = document.getElementById('prompt').value;
+            let prompt = document.getElementById('prompt').value;
             const temp = parseFloat(document.getElementById('temperature').value);
             const tokens = parseInt(document.getElementById('max-tokens').value);
             const topKVal = parseInt(document.getElementById('top-k').value);
+            const instructMode = document.getElementById('instruct-mode')?.checked;
+            
+            if (instructMode) {
+                prompt = `Prompt: ${prompt}\nResponse: `;
+            }
             
             const outputDiv = document.getElementById('output');
             const btnSpinner = document.getElementById('btn-spinner');
@@ -946,6 +959,14 @@ async def generate(req: GenerateRequest) -> GenerateResponse:
         # Decode output token sequences back to string
         generated_ids = y[0].tolist()
         output_text = tokenizer.decode(generated_ids)
+
+        # Remove the original prompt from the output
+        if output_text.startswith(req.prompt):
+            output_text = output_text[len(req.prompt):]
+            
+        # Stop exactly at the endoftext token if present
+        if "<|endoftext|>" in output_text:
+            output_text = output_text.split("<|endoftext|>")[0]
 
         return GenerateResponse(
             prompt=req.prompt,

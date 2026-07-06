@@ -30,6 +30,7 @@ class Trainer:
         val_loader: DataLoader,
         scheduler_fn: Callable[[int, TrainingConfig], float] | None = None,
         full_config: GPTConfig | None = None,
+        output_name: str = "best_model.pt",
     ) -> None:
         """Initialize the trainer.
 
@@ -40,8 +41,10 @@ class Trainer:
             train_loader: DataLoader containing the training data.
             val_loader: DataLoader containing the validation data.
             scheduler_fn: Optional learning rate scheduling function.
+            output_name: Filename for the saved checkpoint.
         """
         self.model = model
+        self.output_name = output_name
         self.optimizer = optimizer
         self.config = config
         self.full_config = full_config
@@ -171,7 +174,7 @@ class Trainer:
             val_loss: Validation loss associated with the checkpoint.
         """
         os.makedirs(self.config.checkpoint_dir, exist_ok=True)
-        checkpoint_path = os.path.join(self.config.checkpoint_dir, "best_model.pt")
+        checkpoint_path = os.path.join(self.config.checkpoint_dir, self.output_name)
 
         checkpoint = {
             "model_state_dict": self.model.state_dict(),
