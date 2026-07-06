@@ -1,0 +1,34 @@
+# Mini GPT Configuration - Balanced CPU Profile
+
+model:
+  vocab_size: 2000        # Vocab size matching trained BPE tokenizer
+  block_size: 128         # Balanced context window for CPU
+  n_layer: 4              # Balanced number of transformer blocks
+  n_head: 4               # Balanced number of attention heads
+  n_embd: 128             # Hidden dimension size
+  dropout: 0.1            # Dropout rate
+  bias: false             # Whether to use bias in Linear layers
+
+training:
+  batch_size: 16          # Balanced batch size for CPU speed
+  learning_rate: 1.0e-3   # Learning rate
+  weight_decay: 0.1       # Weight decay for AdamW
+  beta1: 0.9              # Adam beta1
+  beta2: 0.95             # Adam beta2
+  grad_clip: 1.0          # Gradient clipping threshold
+  epochs: 10               # Number of epochs to train
+  warmup_iters: 20        # Warmup iterations
+  lr_decay_iters: 300     # Decay steps
+  min_lr: 1.0e-4          # Minimum learning rate
+  eval_interval: 20       # Run evaluation every N steps
+  eval_iters: 10          # Number of iterations for validation eval
+  log_interval: 5         # Console log interval
+  checkpoint_dir: "experiments/checkpoints"
+  device: "cpu"           # Always CPU for local runs without CUDA
+  seed: 1337              # Random seed for reproducibility
+
+data:
+  raw_data_path: "data/raw/input.txt"
+  processed_dir: "data/processed"
+  tokenizer_dir: "data/tokenizer"
+  train_split: 0.9        # Proportion of data used for training

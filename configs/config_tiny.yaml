@@ -1,0 +1,61 @@
+# # Mini GPT - Tiny CPU Configuration for testing
+# model:
+#   vocab_size: 320         # Matches tokenizer base + merges
+#   block_size: 32          # Small context window
+#   n_layer: 2              # Small number of layers
+#   n_head: 2               # Small number of heads
+#   n_embd: 32              # Small embedding dimension
+#   dropout: 0.0
+#   bias: true
+
+# training:
+#   batch_size: 2
+#   learning_rate: 1.0e-3
+#   weight_decay: 0.1
+#   beta1: 0.9
+#   beta2: 0.95
+#   grad_clip: 1.0
+#   epochs: 1
+#   warmup_iters: 5
+#   lr_decay_iters: 20
+#   min_lr: 1.0e-4
+#   eval_interval: 5
+#   eval_iters: 2
+#   log_interval: 1
+#   checkpoint_dir: "experiments/checkpoints"
+#   device: "cpu"
+#   seed: 1337
+
+# data:
+#   raw_data_path: "data/raw/input.txt"
+#   processed_dir: "data/processed"
+#   tokenizer_dir: "data/tokenizer"
+#   train_split: 0.9
+
+
+model:
+  vocab_size: 2000
+  block_size: 256         # Scale up (from 128)
+  n_layer: 6              # Scale up (from 4)
+  n_head: 8               # Scale up (from 4)
+  n_embd: 256             # Scale up (from 128)
+  dropout: 0.1
+  bias: false
+
+training:
+  batch_size: 16          # Keep batch_size at 16 (better for CPU)
+  learning_rate: 1.0e-3
+  weight_decay: 0.1
+  beta1: 0.9
+  beta2: 0.95
+  grad_clip: 1.0
+  epochs: 10              # 10 epochs is a good balance
+  warmup_iters: 20
+  lr_decay_iters: 300
+  min_lr: 1.0e-4
+  eval_interval: 20       
+  eval_iters: 10
+  log_interval: 5
+  checkpoint_dir: "experiments/checkpoints"
+  device: "cpu"           # <--- Keep this as "cpu"
+  seed: 1337
