@@ -142,18 +142,26 @@ graph TD
         C2 -->|Saves best model| C4[best_model.pt Checkpoint]
     end
 
-    subgraph D[4. Deployment: Interactive UI]
-        C4 & A3 --> D1[FastAPI Server main.py]
-        D1 -->|Serves Web Page| D2[Interactive HTML Playground UI]
-        D1 -->|API Endpoint| D3[/generate API]
-        D2 & D3 -->|Runs generation| D4[generate.py CLI Pipeline]
-        D4 -->|Creative sampling| D5[Temperature / Top-K]
+    subgraph D[4. Instruction Fine-Tuning (SFT)]
+        C4 --> D1[Load best_model.pt]
+        D2[Q&A Dataset qa_dataset.json] --> D3[Pad Sequences finetune_dataset.py]
+        D1 & D3 --> D4[Trainer Loop finetune.py]
+        D4 -->|Saves instruct model| D5[instruct_model.pt Checkpoint]
+    end
+
+    subgraph E[5. Deployment: Interactive UI]
+        D5 & A3 --> E1[FastAPI Server main.py]
+        E1 -->|Serves Web Page| E2[Interactive HTML Playground UI]
+        E1 -->|API Endpoint| E3[/generate API]
+        E2 & E3 -->|Runs generation| E4[generate.py CLI Pipeline]
+        E4 -->|Creative sampling| E5[Temperature / Top-K]
     end
 
     style A fill:#1e1b4b,stroke:#4f46e5,stroke-width:2px,color:#fff
     style B fill:#311042,stroke:#a855f7,stroke-width:2px,color:#fff
     style C fill:#062f4f,stroke:#0ea5e9,stroke-width:2px,color:#fff
-    style D fill:#064e3b,stroke:#10b981,stroke-width:2px,color:#fff
+    style D fill:#4a044e,stroke:#d946ef,stroke-width:2px,color:#fff
+    style E fill:#064e3b,stroke:#10b981,stroke-width:2px,color:#fff
 ```
 
 ---

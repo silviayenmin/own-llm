@@ -55,11 +55,11 @@ mini-gpt/
 ### 2. Installation
 To set up locally:
 ```bash
-python -m venv .venv
+python -m venv myenv
 # On Windows:
-.venv\Scripts\activate
+myenv\Scripts\activate
 # On Linux/macOS:
-source .venv/bin/activate
+source myenv/bin/activate
 
 pip install -r requirements.txt
 ```
