@@ -964,6 +964,12 @@ async def generate(req: GenerateRequest) -> GenerateResponse:
         if output_text.startswith(req.prompt):
             output_text = output_text[len(req.prompt):]
             
+        # Fallback: If the user forgot to check "Instruct Formatting", the model might output "\nResponse: "
+        if output_text.startswith("\nResponse: "):
+            output_text = output_text[len("\nResponse: "):]
+        elif output_text.startswith("Response: "):
+            output_text = output_text[len("Response: "):]
+            
         # Stop exactly at the endoftext token if present
         if "<|endoftext|>" in output_text:
             output_text = output_text.split("<|endoftext|>")[0]
