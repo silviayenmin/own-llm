@@ -159,3 +159,35 @@ This runs 56 unit tests asserting core correctness, including:
 * Dataset creation and serialization logic.
 * Text generation sampling (greedy vs. stochastic).
 * API health checks, Web UI routes, and POST inference responses.
+
+---
+
+## 8. Scaling to "Huge Parameter" Model (100M+ Params)
+
+To move beyond the basic character-level Mini GPT and train a GPT-2 equivalent model (~124M parameters) on a large dataset:
+
+### 1. Download the Huge Dataset
+We use a 500MB chunk of the `TinyStories` dataset from HuggingFace.
+```bash
+python scripts/download_dataset.py --samples 2500000
+```
+*(Note: Requires the `datasets` package to be installed via `pip install datasets`)*
+
+### 2. Train the BPE Tokenizer
+Character tokenization won't work efficiently for huge models. Train the custom Byte-Pair Encoding (BPE) Tokenizer:
+```bash
+python scripts/train_bpe.py --vocab_size 4096
+```
+
+### 3. Preprocess the Massive Corpus
+Convert the 500MB text file into `.bin` tensors (this uses `np.memmap` so it won't crash your RAM):
+```bash
+python -m training.dataset --config configs/config_huge.yaml
+```
+
+### 4. Train the Huge Model
+Launch the massive training run. This is configured to maximize a 16GB GPU (like the RTX 4060 Ti). 
+```bash
+python -m training.train --config configs/config_huge.yaml
+```
+*(Warning: This process will take many hours. Checkpoints will save periodically to `experiments/checkpoints/best_model.pt`)*

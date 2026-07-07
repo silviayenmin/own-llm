@@ -1,0 +1,34 @@
+# Huge GPT Configuration - 124M Parameters (GPT-2 Small Equivalent)
+
+model:
+  vocab_size: 4096        # Reduced from 50257 to 4096 for faster custom BPE execution
+  block_size: 512         # Context window 
+  n_layer: 12             # 12 Transformer blocks
+  n_head: 12              # 12 Attention heads
+  n_embd: 768             # 768 Embedding dimension
+  dropout: 0.1            # Standard dropout
+  bias: false             # No biases in linear layers (modern practice)
+
+training:
+  batch_size: 8           # Fits well within 16GB VRAM (Adjust if OOM occurs)
+  learning_rate: 6.0e-4   # Max learning rate for GPT-2 Small
+  weight_decay: 0.1       # Weight decay for AdamW
+  beta1: 0.9              # Adam beta1
+  beta2: 0.95             # Adam beta2
+  grad_clip: 1.0          # Gradient clipping threshold
+  epochs: 1               # A massive dataset usually only needs 1 epoch
+  warmup_iters: 2000      # Longer warmup for huge dataset
+  lr_decay_iters: 50000   # Should roughly match total batches in 1 epoch
+  min_lr: 6.0e-5          # Min learning rate (10% of max)
+  eval_interval: 1000     # Run eval every 1000 steps
+  eval_iters: 20          # 20 iterations for validation eval
+  log_interval: 10        # Log to console every 10 steps
+  checkpoint_dir: "experiments/checkpoints"
+  device: "cuda"          # Train on RTX 4060 Ti
+  seed: 1337
+
+data:
+  raw_data_path: "data/raw/huge_corpus.txt"
+  processed_dir: "data/processed"
+  tokenizer_dir: "data/tokenizer"
+  train_split: 0.95       # 95% training, 5% validation

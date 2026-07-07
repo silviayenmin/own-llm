@@ -107,18 +107,31 @@ def preprocess_data(config: GPTConfig, tokenizer: BaseTokenizer) -> None:
     # Create target directory if it doesn't exist
     processed_dir.mkdir(parents=True, exist_ok=True)
 
-    print(f"Reading raw data from {raw_path}...")
+    print(f"Reading and tokenizing raw data from {raw_path} in chunks...")
+    
+    # We will collect all tokens in a list of arrays or a single list
+    # But since it can be large, we write them to temporary files or build a list of uint16 arrays
+    all_tokens = []
+    total_chars = 0
+    
     with open(raw_path, encoding="utf-8") as f:
-        text = f.read()
-
-    print(f"Tokenizing text ({len(text)} characters)...")
-    ids = tokenizer.encode(text)
-    print(f"Total tokens generated: {len(ids)}")
+        while True:
+            chunk = f.read(1024 * 1024 * 5) # 5MB chunk
+            if not chunk:
+                break
+            total_chars += len(chunk)
+            # Encode chunk
+            ids = tokenizer.encode(chunk)
+            all_tokens.extend(ids)
+            print(f"Processed {total_chars / (1024*1024):.1f} MB...", end="\r")
+            
+    print(f"\nTotal characters processed: {total_chars}")
+    print(f"Total tokens generated: {len(all_tokens)}")
 
     # Split into train and val segments
-    split_idx = int(len(ids) * config.data.train_split)
-    train_ids = ids[:split_idx]
-    val_ids = ids[split_idx:]
+    split_idx = int(len(all_tokens) * config.data.train_split)
+    train_ids = all_tokens[:split_idx]
+    val_ids = all_tokens[split_idx:]
 
     print(f"Splitting data (train split: {config.data.train_split}):")
     print(f"  - Train tokens: {len(train_ids)}")
