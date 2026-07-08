@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini GPT - AI Chat Interface</title>
+    <!-- Google Fonts: Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0914;
+            --card-bg: rgba(20, 18, 38, 0.45);
+            --border-color: rgba(147, 51, 234, 0.25);
+            --primary-glow: rgba(124, 58, 237, 0.6);
+            --text-color: #f3f4f6;
+            --user-bubble: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+            --model-bubble: rgba(255, 255, 255, 0.06);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(at 10% 10%, rgba(79, 70, 229, 0.15) 0px, transparent 50%),
+                radial-gradient(at 90% 90%, rgba(147, 51, 234, 0.15) 0px, transparent 50%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Glassmorphic Container */
+        .chat-container {
+            width: 90%;
+            max-width: 800px;
+            height: 85vh;
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(124, 58, 237, 0.05);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Glowing Border Animation effect */
+        .chat-container::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            border-radius: 24px;
+            padding: 1px;
+            background: linear-gradient(135deg, rgba(147, 51, 234, 0.4), transparent, rgba(79, 70, 229, 0.4));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        /* Header */
+        .chat-header {
+            padding: 20px 28px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(11, 9, 20, 0.4);
+        }
+
+        .header-title-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .online-indicator {
+            width: 10px;
+            height: 10px;
+            background-color: #10b981;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #10b981;
+            position: relative;
+        }
+
+        .online-indicator::after {
+            content: '';
+            position: absolute;
+            top: -2px; left: -2px; right: -2px; bottom: -2px;
+            border: 2px solid #10b981;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(2); opacity: 0; }
+        }
+
+        .header-text h1 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .header-text p {
+            font-size: 0.8rem;
+            color: #9ca3af;
+        }
+
+        .model-badge {
+            background: rgba(147, 51, 234, 0.15);
+            border: 1px solid rgba(147, 51, 234, 0.3);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: #c084fc;
+            font-weight: 500;
+        }
+
+        /* Chat History Box */
+        .chat-messages {
+            flex: 1;
+            padding: 28px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(147, 51, 234, 0.3) transparent;
+        }
+
+        .chat-messages::-webkit-scrollbar {
+            width: 6px;
+        }
+        .chat-messages::-webkit-scrollbar-thumb {
+            background-color: rgba(147, 51, 234, 0.3);
+            border-radius: 10px;
+        }
+
+        /* Message Bubbles */
+        .message {
+            max-width: 80%;
+            display: flex;
+            flex-direction: column;
+            animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .message.user {
+            align-self: flex-end;
+        }
+
+        .message.model {
+            align-self: flex-start;
+        }
+
+        .message-bubble {
+            padding: 14px 20px;
+            border-radius: 18px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: var(--text-color);
+            position: relative;
+        }
+
+        .message.user .message-bubble {
+            background: var(--user-bubble);
+            border-bottom-right-radius: 4px;
+            box-shadow: 0 4px 15px rgba(124, 58, 237, 0.2);
+        }
+
+        .message.model .message-bubble {
+            background: var(--model-bubble);
+            border-bottom-left-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .message-time {
+            font-size: 0.7rem;
+            color: #6b7280;
+            margin-top: 5px;
+            align-self: flex-end;
+        }
+
+        .message.model .message-time {
+            align-self: flex-start;
+        }
+
+        /* Typing Indicator */
+        .typing-indicator {
+            display: none;
+            align-items: center;
+            gap: 5px;
+            background: var(--model-bubble);
+            padding: 14px 20px;
+            border-radius: 18px;
+            border-bottom-left-radius: 4px;
+            align-self: flex-start;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .typing-dot {
+            width: 7px;
+            height: 7px;
+            background-color: #c084fc;
+            border-radius: 50%;
+            animation: bounce 1.4s infinite ease-in-out both;
+        }
+
+        .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+        .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+
+        @keyframes bounce {
+            0%, 80%, 100% { transform: scale(0); }
+            40% { transform: scale(1.0); }
+        }
+
+        /* Input Controls Area */
+        .chat-input-area {
+            padding: 24px 28px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            background: rgba(11, 9, 20, 0.4);
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .input-wrapper {
+            flex: 1;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .chat-input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 16px 20px;
+            font-size: 0.95rem;
+            color: var(--text-color);
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .chat-input:focus {
+            border-color: rgba(147, 51, 234, 0.5);
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 0 15px rgba(147, 51, 234, 0.15);
+        }
+
+        .chat-input::placeholder {
+            color: #6b7280;
+        }
+
+        .send-btn {
+            background: var(--user-bubble);
+            border: none;
+            border-radius: 16px;
+            width: 52px;
+            height: 52px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(124, 58, 237, 0.2);
+        }
+
+        .send-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(124, 58, 237, 0.35);
+        }
+
+        .send-btn:active {
+            transform: translateY(0);
+        }
+
+        .send-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: none;
+            stroke: var(--text-color);
+            stroke-width: 2.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            transform: translateX(1px);
+        }
+
+        /* Temperature control panel */
+        .setting-panel {
+            padding: 8px 28px;
+            background: rgba(11, 9, 20, 0.25);
+            border-top: 1px solid rgba(255, 255, 255, 0.03);
+            display: flex;
+            justify-content: flex-end;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .setting-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.75rem;
+            color: #9ca3af;
+        }
+
+        .setting-slider {
+            -webkit-appearance: none;
+            appearance: none;
+            height: 4px;
+            width: 80px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            outline: none;
+        }
+
+        .setting-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #a855f7;
+            cursor: pointer;
+            box-shadow: 0 0 5px #a855f7;
+        }
+
+        .setting-val {
+            min-width: 20px;
+            font-weight: 600;
+            color: #c084fc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chat-container">
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="header-title-container">
+                <div class="online-indicator"></div>
+                <div class="header-text">
+                    <h1>Mini GPT Chat</h1>
+                    <p>RTX 4060 Ti Accelerated Interface</p>
+                </div>
+            </div>
+            <div class="model-badge">Huge Model 124M</div>
+        </div>
+
+        <!-- Chat Area -->
+        <div class="chat-messages" id="chatMessages">
+            <div class="message model">
+                <div class="message-bubble">
+                    Hi there! I am Mini GPT, your custom story-writing assistant. Ask me questions or request a story!
+                </div>
+                <div class="message-time">Just now</div>
+            </div>
+        </div>
+
+        <!-- Typing Indicator -->
+        <div class="typing-indicator" id="typingIndicator">
+            <div class="typing-dot"></div>
+            <div class="typing-dot"></div>
+            <div class="typing-dot"></div>
+        </div>
+
+        <!-- Parameters Panel -->
+        <div class="setting-panel">
+            <div class="setting-item">
+                <span>Temperature:</span>
+                <input type="range" class="setting-slider" id="tempSlider" min="0.2" max="1.5" step="0.1" value="1.0">
+                <span class="setting-val" id="tempVal">1.0</span>
+            </div>
+        </div>
+
+        <!-- Chat Input Area -->
+        <div class="chat-input-area">
+            <div class="input-wrapper">
+                <input type="text" class="chat-input" id="chatInput" placeholder="Type a message or story prompt here..." autocomplete="off">
+            </div>
+            <button class="send-btn" id="sendBtn">
+                <svg viewBox="0 0 24 24">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const chatMessages = document.getElementById('chatMessages');
+        const chatInput = document.getElementById('chatInput');
+        const sendBtn = document.getElementById('sendBtn');
+        const typingIndicator = document.getElementById('typingIndicator');
+        const tempSlider = document.getElementById('tempSlider');
+        const tempVal = document.getElementById('tempVal');
+
+        // Dynamic Temperature display
+        tempSlider.addEventListener('input', (e) => {
+            tempVal.textContent = parseFloat(e.target.value).toFixed(1);
+        });
+
+        // Auto Scroll to bottom
+        function scrollToBottom() {
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Format time
+        function getCurrentTime() {
+            const now = new Date();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12;
+            hours = hours ? hours : 12; // 0 should be 12
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            return `${hours}:${minutes} ${ampm}`;
+        }
+
+        // Add Message element
+        function appendMessage(sender, text) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}`;
+            
+            const bubble = document.createElement('div');
+            bubble.className = 'message-bubble';
+            bubble.textContent = text;
+            
+            const time = document.createElement('div');
+            time.className = 'message-time';
+            time.textContent = getCurrentTime();
+            
+            messageDiv.appendChild(bubble);
+            messageDiv.appendChild(time);
+            
+            chatMessages.appendChild(messageDiv);
+            scrollToBottom();
+        }
+
+        // Send Query to API
+        async function sendMessage() {
+            const prompt = chatInput.value.trim();
+            if (!prompt) return;
+
+            // Clear Input
+            chatInput.value = '';
+            
+            // Append User Message
+            appendMessage('user', prompt);
+
+            // Show Typing Indicator
+            typingIndicator.style.display = 'flex';
+            scrollToBottom();
+
+            const temperature = parseFloat(tempSlider.value);
+
+            try {
+                const response = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        prompt: prompt,
+                        temperature: temperature
+                    })
+                });
+
+                const data = await response.json();
+                
+                // Hide Typing Indicator
+                typingIndicator.style.display = 'none';
+
+                if (response.ok) {
+                    appendMessage('model', data.response);
+                } else {
+                    appendMessage('model', `Error: ${data.detail || 'Something went wrong.'}`);
+                }
+            } catch (err) {
+                typingIndicator.style.display = 'none';
+                appendMessage('model', 'Error: Could not connect to API server.');
+                console.error(err);
+            }
+        }
+
+        // Event Listeners
+        sendBtn.addEventListener('click', sendMessage);
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+</html>
