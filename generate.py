@@ -140,6 +140,13 @@ def main() -> None:
 
     # Decode and print generated text
     generated_ids = y[0].tolist()
+    prompt_len = len(encoded_ids)
+    pad_token_id = tokenizer.special_stoi.get("<|endoftext|>", 256)
+    new_tokens = generated_ids[prompt_len:]
+    if pad_token_id in new_tokens:
+        first_pad_idx = new_tokens.index(pad_token_id)
+        generated_ids = generated_ids[:prompt_len + first_pad_idx]
+        
     output_text = tokenizer.decode(generated_ids)
     print("\n--- Generated Output ---")
     print(output_text)

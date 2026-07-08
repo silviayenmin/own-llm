@@ -109,21 +109,26 @@ def preprocess_data(config: GPTConfig, tokenizer: BaseTokenizer) -> None:
 
     print(f"Reading and tokenizing raw data from {raw_path} in chunks...")
     
-    # We will collect all tokens in a list of arrays or a single list
-    # But since it can be large, we write them to temporary files or build a list of uint16 arrays
     all_tokens = []
     total_chars = 0
+    max_chars = 30 * 1024 * 1024 # Limit to 30MB of text for reasonable speed in pure Python
+    chunk_size = 100 * 1024      # 100KB chunks for frequent progress updates
     
-    with open(raw_path, encoding="utf-8") as f:
-        while True:
-            chunk = f.read(1024 * 1024 * 5) # 5MB chunk
-            if not chunk:
-                break
-            total_chars += len(chunk)
-            # Encode chunk
-            ids = tokenizer.encode(chunk)
-            all_tokens.extend(ids)
-            print(f"Processed {total_chars / (1024*1024):.1f} MB...", end="\r")
+    import gc
+    gc.disable()
+    try:
+        with open(raw_path, encoding="utf-8") as f:
+            while total_chars < max_chars:
+                chunk = f.read(chunk_size)
+                if not chunk:
+                    break
+                print(f"Processed {total_chars / (1024*1024):.2f} MB / {max_chars / (1024*1024):.2f} MB...", flush=True)
+                total_chars += len(chunk)
+                # Encode chunk
+                ids = tokenizer.encode(chunk)
+                all_tokens.extend(ids)
+    finally:
+        gc.enable()
             
     print(f"\nTotal characters processed: {total_chars}")
     print(f"Total tokens generated: {len(all_tokens)}")

@@ -278,35 +278,33 @@ class BPETokenizer(BaseTokenizer):
         self._build_vocab()
 
     def _encode_chunk(self, text: str) -> list[int]:
-        # If text is large, chunk it to avoid O(N^2) list operation slowdowns in pure Python
-        chunk_size = 1000
-        if len(text) > chunk_size:
-            ids = []
-            for i in range(0, len(text), chunk_size):
-                ids.extend(self._encode_chunk(text[i : i + chunk_size]))
-            return ids
-
-        # Convert chunk to UTF-8 bytes representation
-        ids = list(text.encode("utf-8"))
-
-        while len(ids) >= 2:
-            # Find the merge rule that has the lowest merge ID (highest priority)
-            stats = _get_stats(ids)
-            pair_to_merge = None
-            min_merge_idx = float("inf")
-
-            for pair in stats:
-                if pair in self.merges:
-                    merge_idx = self.merges[pair]
-                    if merge_idx < min_merge_idx:
-                        min_merge_idx = merge_idx
-                        pair_to_merge = pair
-
-            if pair_to_merge is None:
-                break # No more merge rules apply
-
-            ids = _merge(ids, pair_to_merge, self.merges[pair_to_merge])
-
+        if not hasattr(self, "cache"):
+            self.cache = {}
+            
+        # Split text into word/space segments to cache BPE encodings
+        segments = re.findall(r'\s*\S+|\s+', text)
+        ids = []
+        for segment in segments:
+            if segment in self.cache:
+                ids.extend(self.cache[segment])
+                continue
+                
+            chunk_ids = list(segment.encode("utf-8"))
+            while len(chunk_ids) >= 2:
+                stats = _get_stats(chunk_ids)
+                pair_to_merge = None
+                min_merge_idx = float("inf")
+                for pair in stats:
+                    if pair in self.merges:
+                        merge_idx = self.merges[pair]
+                        if merge_idx < min_merge_idx:
+                            min_merge_idx = merge_idx
+                            pair_to_merge = pair
+                if pair_to_merge is None:
+                    break
+                chunk_ids = _merge(chunk_ids, pair_to_merge, self.merges[pair_to_merge])
+            self.cache[segment] = chunk_ids
+            ids.extend(chunk_ids)
         return ids
 
     def encode(self, text: str, allowed_special: bool = True) -> list[int]:

@@ -6,7 +6,7 @@ model:
   n_layer: 12             # 12 Transformer blocks
   n_head: 12              # 12 Attention heads
   n_embd: 768             # 768 Embedding dimension
-  dropout: 0.1            # Standard dropout
+  dropout: 0.2            # Standard dropout
   bias: false             # No biases in linear layers (modern practice)
 
 training:
@@ -16,11 +16,11 @@ training:
   beta1: 0.9              # Adam beta1
   beta2: 0.95             # Adam beta2
   grad_clip: 1.0          # Gradient clipping threshold
-  epochs: 1               # A massive dataset usually only needs 1 epoch
+  epochs: 3               # A massive dataset usually only needs 1 epoch
   warmup_iters: 2000      # Longer warmup for huge dataset
   lr_decay_iters: 50000   # Should roughly match total batches in 1 epoch
   min_lr: 6.0e-5          # Min learning rate (10% of max)
-  eval_interval: 1000     # Run eval every 1000 steps
+  eval_interval: 500     # Run eval every 1000 steps
   eval_iters: 20          # 20 iterations for validation eval
   log_interval: 10        # Log to console every 10 steps
   checkpoint_dir: "experiments/checkpoints"

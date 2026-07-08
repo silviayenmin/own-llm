@@ -152,6 +152,7 @@ data/tokenizer/*
 
 # Model checkpoints and weights
 checkpoints/
+experiments/checkpoints/
 *.pt
 *.pth
 *.bin

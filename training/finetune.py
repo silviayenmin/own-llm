@@ -51,7 +51,10 @@ def main():
     
     # Overwrite config for fine-tuning
     config.training.learning_rate = 5e-4  # Slightly higher LR
-    config.training.epochs = 100          # Train longer to memorize QA
+    if len(train_dataset) > 50:
+        config.training.epochs = 5        # Larger dataset needs fewer epochs to generalize
+    else:
+        config.training.epochs = 100      # Memorize toy QA dataset
     config.training.warmup_iters = 10
     
     optimizer = get_optimizer(model, config.training)
