@@ -1,0 +1,4202 @@
+[
+    {
+        "prompt": "Which ocean is the largest?",
+        "response": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "Are you online?",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "Good morning",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "How are you?",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "Are you online?",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "Good afternoon",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "Are you online?",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "Hey",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "Good evening",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "Good evening",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "Tell me about yourself.",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "Which ocean is the largest?",
+        "response": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+        "prompt": "Good afternoon",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "Hey",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "How are you?",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "Hi",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "Which ocean is the largest?",
+        "response": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "Hello",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "Hello",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "Good afternoon",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "Are you online?",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "Who are you?",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "Are you online?",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "Hello",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "Good morning",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "Which ocean is the largest?",
+        "response": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+        "prompt": "Hello",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "Who are you?",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "Hi",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "Are you online?",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "Good morning",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "Hello",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "Hey",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "Tell me about yourself.",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "Hi",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "Which ocean is the largest?",
+        "response": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "Hey",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "Good morning",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "Good evening",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "Good afternoon",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "How are you?",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "Hey",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "What are you doing?",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "Hi",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "Good afternoon",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "Good evening",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "Tell me about yourself.",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "Good afternoon",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "Are you online?",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "How are you?",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "What are you doing?",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "Tell me about yourself.",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "Hi",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "Good afternoon",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "Are you online?",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "Good evening",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "Hi",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "Who are you?",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "Which ocean is the largest?",
+        "response": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+        "prompt": "Are you online?",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "How are you?",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "Are you online?",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "Which ocean is the largest?",
+        "response": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "Tell me about yourself.",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "Hey",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "Hi",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "Are you online?",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "Good morning",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "Are you online?",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "Good morning",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "Good evening",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "How are you?",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "How are you?",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "Hi",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "Hi",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "Good afternoon",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "Hey",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "Hello",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "Good afternoon",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "Good afternoon",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "Hello",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "Which ocean is the largest?",
+        "response": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "What are you doing?",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "What are you doing?",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "Which ocean is the largest?",
+        "response": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "Hello",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "Hello",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "Hello",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "Good evening",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "What are you doing?",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "Who are you?",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "Hey",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "Good evening",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "Good evening",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "Good afternoon",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "Good afternoon",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "Hey",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "Hello",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "Good evening",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "Hello",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "Good evening",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "What are you doing?",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "Who are you?",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "Hi",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "Good afternoon",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "Hi",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "Who are you?",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "Tell me about yourself.",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "Hey",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "What are you doing?",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "Tell me about yourself.",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "Tell me about yourself.",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "Good morning",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "How are you?",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "Good evening",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "Who are you?",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "Hello",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "Tell me about yourself.",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "Hey",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "How are you?",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "How are you?",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "Which ocean is the largest?",
+        "response": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "Are you online?",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "Hey",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "Good evening",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "Tell me about yourself.",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "Which ocean is the largest?",
+        "response": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "Who are you?",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "Who are you?",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "Who are you?",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "Which ocean is the largest?",
+        "response": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "Tell me about yourself.",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "How are you?",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "Good morning",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "Good morning",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "Tell me about yourself.",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "Hi",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "Which ocean is the largest?",
+        "response": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "Hi",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "Are you online?",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "Tell me about yourself.",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "Good morning",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "What are you doing?",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "Tell me about yourself.",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "Hello",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "Which ocean is the largest?",
+        "response": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "Hi",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "Hi",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "How are you?",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "What are you doing?",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "What are you doing?",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "Hey",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "Hi",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "Good morning",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "Hi",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "How are you?",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "Who are you?",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "Which ocean is the largest?",
+        "response": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+        "prompt": "What are you doing?",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "Who are you?",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "Hello",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "Hey",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "How are you?",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "How are you?",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "Good morning",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "Good evening",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "Hi",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "Good morning",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "Hey",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "Good evening",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "Good evening",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "Who are you?",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "What are you doing?",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "How are you?",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "Hi",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "Which ocean is the largest?",
+        "response": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "Who are you?",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "What are you doing?",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "Who are you?",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "Are you online?",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "Hello",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "Hey",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "Good evening",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "Who are you?",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "Which ocean is the largest?",
+        "response": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "What are you doing?",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "Good morning",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "Hello",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "Hi",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "Hi",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "Which ocean is the largest?",
+        "response": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+        "prompt": "What are you doing?",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "How are you?",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "Good evening",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "Hi",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "Who are you?",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "What are you doing?",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "Are you online?",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "Who are you?",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "Good afternoon",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "Hey",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "Hey",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "Hi",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "What is Git?",
+        "response": "Git is a distributed version control system designed to track changes in source code."
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "Hey",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "Write an email subject line for a meeting invitation.",
+        "response": "Meeting Invitation: Project Review and Discussion"
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "Good afternoon",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "Good evening",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "Hi",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "How many continents are there?",
+        "response": "There are seven continents on Earth."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "Hello",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "Good morning",
+        "response": "Hi! What can I assist you with today?"
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "Hey",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792 kilometers per second."
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "How is it going?",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "What is the largest planet?",
+        "response": "Jupiter is the largest planet in our solar system."
+    },
+    {
+        "prompt": "Who wrote Hamlet?",
+        "response": "Hamlet was written by William Shakespeare."
+    },
+    {
+        "prompt": "Which ocean is the largest?",
+        "response": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+        "prompt": "Good morning",
+        "response": "Hi there! Ready to chat. What would you like to discuss?"
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+    },
+    {
+        "prompt": "How do I write an if-else statement in Python?",
+        "response": "Example:\nif x > 0:\n    print('Positive')\nelse:\n    print('Non-positive')"
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "Who are you?",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "Write a polite greeting for a client.",
+        "response": "Dear Valued Client, I hope this message finds you well. How can we assist you today?"
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "How are you?",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "Good afternoon",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "Translate to simple French: Hello, my friend.",
+        "response": "In French, you say: Bonjour, mon ami."
+    },
+    {
+        "prompt": "Good afternoon",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "Tell me about yourself.",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "What is your purpose?",
+        "response": "My purpose is to assist you with tasks, answer questions, and have helpful conversations."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "Tell me about yourself.",
+        "response": "I am a custom GPT assistant trained to help you with general chat, writing, and coding."
+    },
+    {
+        "prompt": "What are you doing?",
+        "response": "Hey! How is everything going?"
+    },
+    {
+        "prompt": "How are you?",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "If a red house is made of red bricks, what is a green house made of?",
+        "response": "A green house is made of glass."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "Good afternoon",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "Good afternoon",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "What gets wetter the more it dries?",
+        "response": "A towel gets wetter the more it dries."
+    },
+    {
+        "prompt": "Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.",
+        "response": "A dog had a fun day playing at the park and then went to sleep."
+    },
+    {
+        "prompt": "What is the capital of Japan?",
+        "response": "The capital of Japan is Tokyo."
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "How do I write a formal letter opening?",
+        "response": "You can open a formal letter with 'Dear Mr./Ms. [Last Name],' or 'To Whom It May Concern:'."
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "What month has 28 days?",
+        "response": "All months have at least 28 days."
+    },
+    {
+        "prompt": "Rephrase: It is raining cats and dogs.",
+        "response": "It is raining very heavily outside."
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "Hey",
+        "response": "Hello, how can I help you?"
+    },
+    {
+        "prompt": "Hi",
+        "response": "Good day! How may I help you?"
+    },
+    {
+        "prompt": "If you have three apples and take away two, how many do you have?",
+        "response": "You have two apples (the ones you took away)."
+    },
+    {
+        "prompt": "What has keys but can't open locks?",
+        "response": "A piano (or a keyboard) has keys but cannot open locks."
+    },
+    {
+        "prompt": "How do I print a string in Python?",
+        "response": "You print a string using the print() function, like this: print(\"Hello World\")"
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+    },
+    {
+        "prompt": "How do I read a file in Python?",
+        "response": "You can read a file using a with-block: with open('file.txt', 'r') as f: data = f.read()"
+    },
+    {
+        "prompt": "What is photosynthesis?",
+        "response": "Photosynthesis is the process used by plants to convert light energy into chemical energy."
+    },
+    {
+        "prompt": "What is the capital of USA?",
+        "response": "The capital of the USA is Washington, D.C."
+    },
+    {
+        "prompt": "What has a neck but no head?",
+        "response": "A bottle has a neck but no head."
+    },
+    {
+        "prompt": "What is a syntax error?",
+        "response": "A syntax error occurs when the code violates the grammatical rules of the programming language."
+    },
+    {
+        "prompt": "What is the difference between a list and a tuple?",
+        "response": "Lists are mutable (can be changed), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "prompt": "What are you doing?",
+        "response": "Hello! I am a general conversational assistant. What's on your mind?"
+    }
+]

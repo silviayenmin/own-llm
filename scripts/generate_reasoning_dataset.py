@@ -1,0 +1,120 @@
+import json
+import random
+from pathlib import Path
+
+def generate_reasoning_dataset():
+    qa_pairs = []
+
+    # 1. Greetings & Identity (250 pairs)
+    identities = [
+        ("Who are you?", 
+         "Let's think. I am a custom language model created by you in PyTorch. I have been trained to chat and reason step-by-step. So, the answer is I am Mini GPT."),
+        ("What is your name?",
+         "Let's think. My creator named me Mini GPT because I am a small-scale transformer model. My purpose is to help you test neural network architectures. So, the answer is my name is Mini GPT."),
+        ("Who created you?",
+         "Let's think. I was programmed, trained, and fine-tuned by you on your computer. You wrote the neural weights in PyTorch and configured my parameters. So, the answer is you created me."),
+        ("What is this model called?",
+         "Let's think. In your project files, this model is configured as a custom transformer architecture named Mini GPT. It is trained on the TinyStories vocabulary. So, the answer is it is called Mini GPT."),
+        ("Are you a human?",
+         "Let's think. I do not have a physical body, feelings, or biological cells. I am a deep learning network running on your GPU. So, the answer is no, I am a small language model.")
+    ]
+    
+    greetings = [
+        ("Hello",
+         "Let's think. The user is initiating a conversation with a standard greeting. I should respond in a friendly and welcoming manner. So, the answer is Hello! How can I help you today?"),
+        ("Hi",
+         "Let's think. A short greeting requires a polite and helpful reply. I am online and ready to assist. So, the answer is Hi there! What would you like to reason about today?"),
+        ("Hey",
+         "Let's think. The user said hey. I will offer a casual, helpful response to encourage them to write or chat. So, the answer is Hey! How can I assist you with your tasks?"),
+        ("Good morning",
+         "Let's think. The user is greeting me at the start of the day. I should wish them a pleasant day ahead. So, the answer is Good morning! I hope you have a highly productive day.")
+    ]
+    
+    for _ in range(125):
+        qa = random.choice(identities)
+        qa_pairs.append({"prompt": qa[0], "response": qa[1]})
+        
+    for _ in range(125):
+        qa = random.choice(greetings)
+        qa_pairs.append({"prompt": qa[0], "response": qa[1]})
+
+    # 2. General Knowledge & Facts (250 pairs)
+    facts = [
+        ("What is the capital of Japan?", 
+         "Let's think. Japan is an island nation located in East Asia. Its largest metropolitan area, which houses the national government, is Tokyo. So, the answer is Tokyo."),
+        ("What is the capital of USA?", 
+         "Let's think. The United States of America is a federal republic in North America. Its federal capital city is named after George Washington. So, the answer is Washington, D.C."),
+        ("What is the largest planet?", 
+         "Let's think. We need to check the relative sizes of all planets in our solar system. The gas giant that has the most mass and volume is Jupiter. So, the answer is Jupiter."),
+        ("Who wrote Hamlet?", 
+         "Let's think. Hamlet is a famous tragic play written in the Elizabethan era. The playwright renowned for this and Romeo and Juliet is William Shakespeare. So, the answer is William Shakespeare."),
+        ("What is the speed of light?", 
+         "Let's think. Light travels at a constant velocity in a vacuum. In metric units, this value is approximately 300,000 kilometers per second. So, the answer is about 299,792 km/s."),
+        ("How many continents are there on Earth?", 
+         "Let's think. Earth's landmass is divided into major geographic divisions. Counting Asia, Africa, North America, South America, Antarctica, Europe, and Australia, we get seven. So, the answer is seven."),
+        ("What is the chemical formula for water?", 
+         "Let's think. A water molecule is made of two hydrogen atoms bonded to one oxygen atom. Representing this in standard chemical symbols yields H2 and O. So, the answer is H2O."),
+        ("Which ocean is the largest on Earth?", 
+         "Let's think. We compare the surface areas of all global oceans. The ocean that covers the largest area between Asia, Australia, and the Americas is the Pacific. So, the answer is the Pacific Ocean.")
+    ]
+    for _ in range(250):
+        qa = random.choice(facts)
+        qa_pairs.append({"prompt": qa[0], "response": qa[1]})
+
+    # 3. Simple Reasoning & Logical Scenarios (200 pairs)
+    riddles = [
+        ("If you have three apples and take away two, how many do you have?", 
+         "Let's think. The question asks how many apples you personally possess after taking them. Since you took away two apples, those are the ones in your hands. So, the answer is you have two apples."),
+        ("What has keys but can't open locks?", 
+         "Let's think. We need an object that has elements called 'keys' but does not operate mechanical lock cylinders. Musical instruments like a piano or input devices like a keyboard fit this. So, the answer is a piano."),
+        ("What gets wetter the more it dries?", 
+         "Let's think. As you dry yourself off after a bath, you transfer moisture from your skin to a cloth sheet. That cloth sheet becomes wet in the process. So, the answer is a towel."),
+        ("What has a neck but no head?", 
+         "Let's think. We need to identify a household container or object that has a narrow throat-like shape near its opening but is not a living creature. A glass container used for liquids fits this. So, the answer is a bottle."),
+        ("What month has 28 days?", 
+         "Let's think. Every calendar month on Earth has a specific number of days. While February has exactly 28 days (or 29 in leap years), all other months contain 30 or 31 days, meaning they also contain at least 28 days. So, the answer is all of them.")
+    ]
+    for _ in range(200):
+        qa = random.choice(riddles)
+        qa_pairs.append({"prompt": qa[0], "response": qa[1]})
+
+    # 4. Text Manipulation & Writing Tasks (200 pairs)
+    writing = [
+        ("Write a polite email greeting.", 
+         "Let's think. A polite email should be formal and address the recipient respectfully. A standard opening uses the word 'Dear' followed by the recipient's name. So, the answer is Dear Team, I hope you are having a productive week."),
+        ("Rephrase: It is raining cats and dogs.", 
+         "Let's think. The phrase is an English idiom indicating heavy precipitation. To rephrase it literally, we should state that water is falling heavily from the sky. So, the answer is it is raining very heavily outside."),
+        ("Summarize: The dog went to the park, chased a ball, played with friends, and fell asleep.", 
+         "Let's think. We need to capture the key actions: a dog, visiting a park, playing games, and sleeping. We can condense this into a single simple sentence. So, the answer is a dog had a fun day playing at the park and went to sleep."),
+        ("Write a formal letter opening.", 
+         "Let's think. A formal letter requires a standard professional salutation. We can use a gender-neutral or specific salutation depending on who we are writing to. So, the answer is To Whom It May Concern:")
+    ]
+    for _ in range(200):
+        qa = random.choice(writing)
+        qa_pairs.append({"prompt": qa[0], "response": qa[1]})
+
+    # 5. Simple Programming (150 pairs)
+    programming = [
+        ("How do I print a string in Python?", 
+         "Let's think. In Python, outputting text to the screen is handled by the print function. We pass our text string surrounded by quotes inside the function's parentheses. So, the answer is to use the print() function."),
+        ("What is the difference between a list and a tuple?", 
+         "Let's think. In Python, lists and tuples are both sequence data types. However, lists can be modified after creation (mutable) whereas tuples are read-only (immutable). So, the answer is lists are mutable and tuples are immutable."),
+        ("What is a syntax error?", 
+         "Let's think. Programming languages have strict grammar rules. When code is written that violates these formatting rules, the interpreter cannot parse it and raises a flag. So, the answer is it occurs when code violates grammatical rules.")
+    ]
+    for _ in range(150):
+        qa = random.choice(programming)
+        qa_pairs.append({"prompt": qa[0], "response": qa[1]})
+
+    # Shuffle and slice
+    random.shuffle(qa_pairs)
+    qa_pairs = qa_pairs[:1050]
+
+    output_path = Path("data/instruct/qa_dataset.json")
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(qa_pairs, f, indent=4, ensure_ascii=False)
+
+    print(f"Generated {len(qa_pairs)} Chain-of-Thought reasoning Q&A pairs and saved to {output_path}")
+
+if __name__ == "__main__":
+    generate_reasoning_dataset()
