@@ -26,7 +26,7 @@ python -m venv myenv
 # On Windows (PowerShell):
 myenv\Scripts\Activate.ps1
 # On Windows (CMD):
-myenv\Scripts\activate.bat
+.\myenv\Scripts\Activate.ps1
 # On Linux/macOS:
 source myenv/bin/activate
 

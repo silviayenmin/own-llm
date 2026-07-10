@@ -104,6 +104,11 @@ def main() -> None:
         print("Character Tokenizer created.")
 
     elif tokenizer_type == "bpe":
+        # Limit text to 100KB for speed and memory stability in pure Python BPE training
+        if len(text) > 100 * 1024:
+            print("Limiting BPE training text to first 100KB to prevent memory/GC crashes on Windows...")
+            text = text[:100 * 1024]
+
         print("Training Byte-Pair Encoding (BPE) Tokenizer from scratch...")
         bpe_tokenizer = BPETokenizer(special_tokens=special_tokens)
 
@@ -114,7 +119,13 @@ def main() -> None:
                   f"Setting vocab_size to {min_allowed_vocab + 100} to allow merges.")
             vocab_size = min_allowed_vocab + 100
 
-        bpe_tokenizer.train(text, vocab_size=vocab_size, verbose=args.verbose)
+        import gc
+        gc.disable()
+        try:
+            bpe_tokenizer.train(text, vocab_size=vocab_size, verbose=args.verbose)
+        finally:
+            gc.enable()
+            
         tokenizer = bpe_tokenizer
         print("BPE Tokenizer training completed.")
     else:

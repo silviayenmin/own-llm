@@ -15,7 +15,8 @@ def main():
 
     config = GPTConfig.from_yaml(args.config) if args.config else GPTConfig()
     
-    tokenizer_dir = "data/tokenizer"
+    # Resolve tokenizer directory from config if provided
+    tokenizer_dir = config.data.tokenizer_dir if args.config else "data/tokenizer"
     tokenizer = load_tokenizer(tokenizer_dir)
     
     import torch

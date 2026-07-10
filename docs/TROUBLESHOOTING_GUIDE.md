@@ -60,3 +60,21 @@ Get-EventLog -LogName Application -EntryType Error -Newest 5 | Format-List
     gc.enable()
     ```
 *   And high processing methods recursion skip panni sequential loop structures iterative method logic scale panni caching maps build pannanum.
+
+---
+
+## 4. 🧠 BPE Tokenizer Training Memory Limit Crash (Tanglish version)
+
+*   **Enna aachu:** BPE tokenizer training script `tokenizer.train_tokenizer` execute pannumpodhu prompt silent-a thirumba vandhudum. Aana `tokenizer.json` directory general-kulla save aagi irukadhu, and output prints complete aagadhu.
+*   **Reason (Enna prachana):** Pure Python loops-la 16,127 merge iterations-la millions of temporary tuples/dicts dynamic-a create aaguradhunaala, memory heap crash trigger aagi Windows system Python process-a warning illaama silent-a kill pannidum.
+*   **Solution (Epdi thirumba vandha fix panradhu):**
+    1.  **Reduce BPE Text Sample Size:** Tokenizer input-a raw data-la full-aah 13MB load pannama first **100KB or 200KB**-a crop panni limit panni run pannanum:
+        ```python
+        # Target limit configuration check (100KB size)
+        text = text[:100 * 1024]
+        ```
+    2.  **Enable/Disable GC around training loop:** Training speed increment use panna memory GC loops disable control setup use pannanum.
+    3.  **Command to run:**
+        ```powershell
+        python -m tokenizer.train_tokenizer --type bpe --vocab_size 16384 --raw_data_path data/raw/huge_corpus_general.txt --tokenizer_dir data/tokenizer_general
+        ```

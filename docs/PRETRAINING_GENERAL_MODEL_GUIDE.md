@@ -93,11 +93,26 @@ This reads the new general corpus, tokenizes it with the 16k tokenizer, and save
 Now, train the model to learn the basics of language, math, and code:
 
 ```powershell
-python -m training.pretrain --config configs/config_huge.yaml
+python -m training.train --config configs/config_huge.yaml
 ```
 *   **GPU Load:** This will run your RTX 4060 Ti at 100% capacity.
 *   **Training Time:** Pretraining on a 30MB-50MB corpus for 3 epochs with a 16k vocab will take **approximately 8 to 15 hours** to reach a low validation loss.
 *   **Result:** Once finished, it will save the base weights to `experiments/checkpoints/best_model.pt`.
+
+---
+
+## Intermediate Step: Run and Test the Pretrained Base Model
+Before fine-tuning, you should check how the base model completes sentences. Since this is a **base model** (and not a chatbot yet), do **not** use the `"Prompt: ... Response:"` template. Instead, just write natural sentence beginnings:
+
+```powershell
+python generate.py --checkpoint experiments/checkpoints/best_model.pt --tokenizer_dir data/tokenizer_general --prompt "Japan is a country in"
+```
+
+Try testing with other prompts like:
+*   `"Python is a programming language that"`
+*   `"Water has a chemical formula of"`
+
+Observe how the base model tries to autocomplete the sentences naturally using what it learned from Wikipedia!
 
 ---
 
@@ -119,7 +134,8 @@ Once the base model has learned how math and code look, we apply instruction tun
     ```
 4.  **Test Reasoning:**
     ```powershell
-    python generate.py --checkpoint experiments/checkpoints/instruct_model.pt --prompt "Prompt: What is 1 + 1?\nResponse:"
+    python generate.py --checkpoint 
+    /checkpoints/instruct_model.pt --prompt "Prompt: What is 1 + 1?\nResponse:"
     ```
 
 Because your base model now has mathematical facts in its brain from Step 5, when it generates `"Let's think. 1 + 1 means..."` it will successfully complete the math logic and output `2`!

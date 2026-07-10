@@ -182,5 +182,10 @@ if __name__ == "__main__":
     else:
         config = GPTConfig()
 
-    tokenizer = load_tokenizer(args.tokenizer_dir)
+    # Fall back to config if tokenizer_dir is the default and config specifies a different path
+    tokenizer_dir = args.tokenizer_dir
+    if args.config and args.tokenizer_dir == "data/tokenizer" and config.data.tokenizer_dir != "data/tokenizer":
+        tokenizer_dir = config.data.tokenizer_dir
+
+    tokenizer = load_tokenizer(tokenizer_dir)
     preprocess_data(config, tokenizer)

@@ -1,7 +1,7 @@
 # Huge GPT Configuration - 124M Parameters (GPT-2 Small Equivalent)
 
 model:
-  vocab_size: 4096        # Reduced from 50257 to 4096 for faster custom BPE execution
+  vocab_size: 16384        # Reduced from 50257 to 4096 for faster custom BPE execution
   block_size: 512         # Context window 
   n_layer: 12             # 12 Transformer blocks
   n_head: 12              # 12 Attention heads
@@ -28,7 +28,7 @@ training:
   seed: 1337
 
 data:
-  raw_data_path: "data/raw/huge_corpus.txt"
+  raw_data_path: "data/raw/huge_corpus_general.txt"
   processed_dir: "data/processed"
-  tokenizer_dir: "data/tokenizer"
+  tokenizer_dir: "data/tokenizer_general"
   train_split: 0.95       # 95% training, 5% validation
