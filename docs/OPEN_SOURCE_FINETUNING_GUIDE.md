@@ -15,12 +15,27 @@ To fine-tune models with billions of parameters on a home GPU, we use **QLoRA (Q
 ## 📦 Step 1: Install Required Libraries
 Run this command in your conda environment to install the modern fine-tuning stack:
 ```powershell
-pip install torch transformers peft trl bitsandbytes datasets accelerate
+python -m pip install torch transformers peft trl bitsandbytes datasets accelerate
 ```
 
 ---
 
-## 📝 Step 2: The Fine-Tuning Python Script
+## 🔑 Step 2: Authenticate with Hugging Face (For Gated Models like Llama)
+Because Meta's Llama models are **gated**, you must request access and configure your API key before downloading:
+1.  **Request Model Access:** Visit the [Llama-3.2-1B-Instruct page](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct), log in, fill in the agreement, and submit. Approval is instant.
+2.  **Generate a Token:** Go to your Hugging Face account settings, navigate to **Access Tokens**, and create a new **Read** token.
+3.  **Log in locally:** In your conda terminal, run either of these commands and paste your token:
+    ```powershell
+    # Option A (Modern CLI):
+    hf auth login
+
+    # Option B (Guaranteed Python fallback):
+    python -c "from huggingface_hub import login; login()"
+    ```
+
+---
+
+## 📝 Step 3: The Fine-Tuning Python Script
 Create a script named `finetune_opensource.py` and paste the following clean, professional template:
 
 ```python
@@ -37,7 +52,7 @@ from trl import SFTTrainer
 
 def train():
     # 1. Choose your base model (e.g. Qwen-2.5-1.5B or Llama-3.2-1B)
-    model_id = "Qwen/Qwen2.5-1.5B-Instruct"
+    model_id = "meta-llama/Llama-3.2-1B-Instruct"
     output_dir = "./local_finetuned_model"
 
     print("Loading tokenizer...")
@@ -137,7 +152,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
 
-base_model_id = "Qwen/Qwen2.5-1.5B-Instruct"
+base_model_id = "meta-llama/Llama-3.2-1B-Instruct"
 adapter_dir = "./local_finetuned_model"
 
 # 1. Load base tokenizer & model
@@ -161,3 +176,19 @@ with torch.no_grad():
 ```
 
 This model is **guaranteed to generalize** to any question you ask because it combines the massive pretraining library of the Qwen/Llama base model with your custom conversational style adapters!
+
+---
+
+## 🎨 Step 5: (Optional) Run the Web Chat UI
+If you prefer chatting in a beautiful web browser interface rather than the terminal command line, you can run a local web chat interface using **Gradio**:
+
+1.  **Install Gradio:**
+    ```powershell
+    python -m pip install gradio
+    ```
+2.  **Run the UI server:**
+    ```powershell
+    python ui_finetuned_opensource.py
+    ```
+3.  **Chat in Browser:** 
+    Gradio will launch a local server and give you a local URL (e.g. `http://127.0.0.1:7860`). Open that link in your browser to chat with your fine-tuned model inside a clean, modern messaging interface!

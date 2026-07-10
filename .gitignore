@@ -153,6 +153,7 @@ data/tokenizer/*
 # Model checkpoints and weights
 checkpoints/
 experiments/checkpoints/
+local_finetuned_model/
 *.pt
 *.pth
 *.bin
